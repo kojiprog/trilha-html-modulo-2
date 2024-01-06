@@ -1,38 +1,181 @@
-html, body {
-    margin: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500&display=swap");
+
+html,
 body {
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Phudu", sans-serif;
 }
 
 .wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+  width: 80vw;
+  display: flex;
+  margin: 0 auto;
+  background-color: aquamarine;
 }
 .main {
-    display: flex;
-    flex-flow: column;
-    width: 85%;
+  display: flex;
+  flex-flow: column;
+  width: 85%;
+}
+
+.menu ul {
+  margin-top: 250px;
+  padding: 0 23px;
+}
+.menu ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu ul li a:hover {
+  color: orange;
 }
 .menu {
-    width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+  width: 20%;
+  background-color: red;
+  padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header h1 {
+  color: red;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+}
+
+.header img {
+  width: 800px;
+  text-align: center;
 }
 .content {
-    background-color: white;
-    min-height: 300px;
-    padding: 20px;
+  background-color: white;
+  padding: 20px 100px;
+  height: 100vh;
+}
+
+.content P {
+  font-weight: 400;
+  color: #757575;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+  background-color: orange;
+  min-height: 50px;
+  text-align: center;
+}
+
+.footer p {
+  font-weight: 300;
+  color: white;
+}
+
+/* ********************************* */
+/* pagina sobre nos */
+
+.header .img__sobreNos {
+  width: 385px;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* ********************************* */
+/* pagina horário de atendimento */
+
+.header .img__horarioAtendimento {
+  width: 350px;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.content .table__horarioAtendimento {
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+}
+
+/* ********************************* */
+/* pagina contato */
+
+.content .whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .whatsapp p {
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.content .whatsapp img {
+  width: 25px;
+}
+
+.content .content__adress {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  height: 140px;
+  width: 270px;
+}
+.gmap_canvas iframe {
+  position: relative;
+  z-index: 2;
+}
+
+.maprouter a {
+  color: #fff !important;
+  position: absolute !important;
+  top: 0 !important;
+  z-index: 0 !important;
+}
+
+.content .content__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 90px;
+}
+
+.content .content__form img{
+    width: 50%;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+
+textarea{
+    width: 200px;
+    height: 80px;
+}
+
+.button{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    width: 85px;
+    height: 30px;
 }

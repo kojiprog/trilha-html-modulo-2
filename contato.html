@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetLovers - Cuidandos com seu PET</title>
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./sobre_nos.html">Sobre nós</a></li>
+          <li>
+            <a href="./horario_atendimento.html">Horário de Atendimento</a>
+          </li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <!-- Aqui vai o seu header -->
+          <img
+            src="./assets/img/contato_pet.png"
+            alt="Cuidando do seu Pet"
+            style="width: 385px; text-align: center; margin: 0px 60% 0 29%"
+          />
+          <h1><span style="color: orange">ENTRE E</span>M CONTATO</h1>
+        </div>
+        <div class="content">
+          <div class="whatsapp">
+            <p>NOSSO WHATSAPP: (54) 9 9954-9696</p>
+            <img src="./assets/img/whats-logo.png" alt="whatsapp" />
+          </div>
+          <div class="content__adress">
+            <div class="adress">
+              <h4>Endereço:</h4>
+              <address style="color: #757575">
+                Rua dos programadores, 0101
+                <br />Cristo Redentor, <br />CEP: 01010-0101 <br />Caxias do
+                Sul, RS
+              </address>
+            </div>
+            <div class="adress__map">
+              <h4>Localização</h4>
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe
+                    src="https://maps.google.com/maps?q=angela%20randon%20148&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    style="width: 470px; height: 240px"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__form">
+            <form action="/submit_form" method="post">
+              <label for="nome">Nome:</label><br />
+              <input type="text" id="nome" name="nome" required /><br />
+              <label for="email">E-mail:</label><br />
+              <input type="email" id="email" name="email" required /><br />
+              <label for="assunto">Assunto:</label><br />
+              <input type="text" id="assunto" name="assunto" required /><br />
+              <label for="mensagem">Mensagem:</label><br />
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                minlength="50"
+                maxlength="500"
+                required
+              ></textarea
+              ><br /><br />
+              <input class="button" type="submit" value="Enviar" />
+              <input class="button" type="reset" value="Limpar" />
+            </form>
+            <img src="./assets/img/cat-dog.png" alt="gato e cachorro" />
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>Todos os direitos reservados a &copy;Copyright</p>
+          <!-- Aqui vai o seu rodapé -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <form action="/submit_form" method="post">
+  <label for="nome">Nome:</label><br />
+  <input type="text" id="nome" name="nome" /><br />
+  <label for="email">E-mail:</label><br />
+  <input type="email" id="email" name="email" /><br />
+  <label for="assunto">Assunto:</label><br />
+  <input type="text" id="assunto" name="assunto" /><br />
+  <label for="mensagem">Mensagem:</label><br />
+  <textarea id="mensagem" name="mensagem"></textarea><br /><br />
+  <input type="submit" value="Enviar" />
+  <input type="reset" value="Limpar" />
+</form>
+
+<address>
+  Rua dos programadores, 0101
+  <br />Cristo Redentor, <br />CEP: 01010-0101 <br />Caxias do Sul,
+  RS
+</address> -->
